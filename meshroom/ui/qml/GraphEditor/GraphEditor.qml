@@ -1001,8 +1001,6 @@ Item {
 
                             property var nodes: []
 
-                            width: uigraph.layout.nodeWidth
-
                             mainSelected: uigraph.selectedNode === node
                             hovered: uigraph.hoveredNode === node
 
@@ -1075,6 +1073,10 @@ Item {
 
                             onResized: function(width, height) {
                                 uigraph.resizeNode(node, width, height);
+                            }
+
+                            onResizedAndMoved: function(width, height, position) {
+                                uigraph.resizeAndMoveNode(node, width, height, position);
                             }
 
                             onEntered: uigraph.hoveredNode = node
