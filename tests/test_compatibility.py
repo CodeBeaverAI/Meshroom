@@ -53,7 +53,7 @@ class SampleNodeV1(desc.Node):
         desc.StringParam(name='paramA', label='ParamA', description='', value='', invalidate=False)  # No impact on UID
     ]
     outputs = [
-        desc.File(name='output', label='Output', description='', value=desc.Node.internalFolder)
+        desc.File(name='output', label='Output', description='', value="{nodeCacheFolder}")
     ]
 
 
@@ -66,7 +66,7 @@ class SampleNodeV2(desc.Node):
         desc.StringParam(name='paramA', label='ParamA', description='', value='', invalidate=False),  # No impact on UID
     ]
     outputs = [
-        desc.File(name='output', label='Output', description='', value=desc.Node.internalFolder)
+        desc.File(name='output', label='Output', description='', value="{nodeCacheFolder}")
     ]
 
 
@@ -79,7 +79,7 @@ class SampleNodeV3(desc.Node):
         desc.File(name='in', label='Input', description='', value='',),
     ]
     outputs = [
-        desc.File(name='output', label='Output', description='', value=desc.Node.internalFolder)
+        desc.File(name='output', label='Output', description='', value="{nodeCacheFolder}")
     ]
 
 
@@ -96,7 +96,7 @@ class SampleNodeV4(desc.Node):
                            description='')
     ]
     outputs = [
-        desc.File(name='output', label='Output', description='', value=desc.Node.internalFolder)
+        desc.File(name='output', label='Output', description='', value="{nodeCacheFolder}")
     ]
 
 
@@ -113,7 +113,7 @@ class SampleNodeV5(desc.Node):
                            description='')
     ]
     outputs = [
-        desc.File(name='output', label='Output', description='', value=desc.Node.internalFolder)
+        desc.File(name='output', label='Output', description='', value="{nodeCacheFolder}")
     ]
 
 
@@ -130,7 +130,7 @@ class SampleNodeV6(desc.Node):
                            description='')
     ]
     outputs = [
-        desc.File(name='output', label='Output', description='', value=desc.Node.internalFolder)
+        desc.File(name='output', label='Output', description='', value="{nodeCacheFolder}")
     ]
 
 
@@ -140,7 +140,7 @@ class SampleInputNodeV1(desc.InputNode):
         desc.StringParam(name='path', label='path', description='', value='', invalidate=False)  # No impact on UID
     ]
     outputs = [
-        desc.File(name='output', label='Output', description='', value=desc.Node.internalFolder)
+        desc.File(name='output', label='Output', description='', value="{nodeCacheFolder}")
     ]
 
 
@@ -152,7 +152,7 @@ class SampleInputNodeV2(desc.InputNode):
         desc.StringParam(name='in', label='path', description='', value='', invalidate=False)  # No impact on UID
     ]
     outputs = [
-        desc.File(name='output', label='Output', description='', value=desc.Node.internalFolder)
+        desc.File(name='output', label='Output', description='', value="{nodeCacheFolder}")
     ]
 
 
