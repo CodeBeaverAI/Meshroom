@@ -36,6 +36,6 @@ MeshroomMaya contains a user interface to browse all cameras.
             name="output",
             label="Folder",
             description="Folder for MeshroomMaya outputs: undistorted images and thumbnails.",
-            value=desc.Node.internalFolder,
+            value="{nodeCacheFolder}",
         ),
     ]
